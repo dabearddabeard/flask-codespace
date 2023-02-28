@@ -37,9 +37,29 @@ code {
 }
 
 .heart {
-    color: #ff0000;
+    color: #ffffff;
 }
 
 .small {
     font-size: 0.75rem;
 }
+
+.af {
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 80px;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    -1px -1px 0 rgb(160, 160, 160),
+    -2px -2px 0 rgb(160, 160, 160),
+    -3px -3px 0 rgb(160, 160, 160),
+    -4px -4px 0 rgb(160, 160, 160),
+    -5px -5px 0 rgb(160, 160, 160),
+    -6px -6px 0 rgb(160, 160, 160),
+    -7px -7px 0 rgb(160, 160, 160),
+    -8px -8px 0 rgb(160, 160, 160),
+    -30px 20px 40px dimgrey
+  }
