@@ -1,47 +1,19 @@
 from flask import Flask, render_template
+import numpy as np
+import pandas as pd
+from yahoo_fin import stock_info
+from datetime import datetime
+import time
+import yfinance as yf
 
-app = Flask(__name__)
+start_date = datetime(2023, 3, 1)
+this_date = datetime.now()
+end_date = this_date.timetuple()[:3]
+data = yf.download('SOL-USD', start=start_date, end=end_date)
+
+# save for later use
+data.to_csv('sol_data.csv', index=False)
 
 @app.route("/")
-def arctic_frenz():
+def home():
     return render_template("index.html", title="Arctic Frenz")
-
-
-"""
-#import necessary libraries
-import pandas as pd
-import numpy as np
-from sklearn.linear_model import LinearRegression
-
-#load data into a dataframe
-df = pd.read_csv('stock_data.csv')
-
-#split data into features and labels
-X = df.iloc[:, :-1].values
-y = df.iloc[:, -1].values
-
-#create a linear regression model
-regressor = LinearRegression()
-
-#fit the model to the data
-regressor.fit(X, y)
-
-#predict the stock prices
-y_pred = regressor.predict(X)
-    
-# An elaborate, high quality docstring for the above function:
-"""
-"""
-This function predicts the stock prices for a given set of features.
-
-Parameters
-----------
-X : numpy array
-    The features for which the stock prices are to be predicted.
-
-Returns
--------
-y_pred : numpy array
-    The predicted stock prices.
-
-"""
