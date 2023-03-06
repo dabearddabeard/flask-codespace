@@ -21,6 +21,58 @@ body {
 }
 
 
+header {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Courier Prime", monospace;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header h1 {
+    color: #fff;
+    animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes cursor {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0ch
+    }
+
+    30% {
+        width: 16ch;
+    }
+
+    80% {
+        width: 16ch;
+    }
+
+    90% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 0ch;
+    }
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -46,6 +98,12 @@ body {
         max-width: 80vmax;
     }
 
+    header h1 {
+        font-size: 35px;
+        font-weight: 250;
+        border-right: 2px solid #fff;
+    }
+
     p {
         font-size: 18px;
     }
@@ -63,11 +121,11 @@ body {
     }
 
     h3 {
-        font-size: 25PX;
+        font-size: 25px;
     }
 
     h4 {
-        font-size: 20PX;
+        font-size: 20px;
     }
 }
 
@@ -76,6 +134,12 @@ body {
         max-width: 70vmax;
     }
 
+    header h1 {
+        font-size: 35px;
+        font-weight: 250;
+        border-right: 2px solid #fff;
+    }
+
     p {
         font-size: 18px;
     }
@@ -93,11 +157,11 @@ body {
     }
 
     h3 {
-        font-size: 25PX;
+        font-size: 25px;
     }
 
     h4 {
-        font-size: 20PX;
+        font-size: 20px;
     }
 
 }
@@ -105,6 +169,13 @@ body {
 @media (min-width:768px) and (max-width:1023px) {
     .container {
         max-width: 60vmax;
+    }
+
+    header h1 {
+        font-size: 30
+        px;
+        font-weight: 210;
+        border-right: 1.8px solid #fff;
     }
 
     p {
@@ -124,11 +195,11 @@ body {
     }
 
     h3 {
-        font-size: 22PX;
+        font-size: 22px;
     }
 
     h4 {
-        font-size: 18PX;
+        font-size: 18px;
     }
 
 }
@@ -136,6 +207,12 @@ body {
 @media (min-width:480px) and (max-width:767px) {
     .container {
         max-width: min(90vmin, 90vmax);
+    }
+
+    header h1 {
+        font-size: 22px;
+        font-weight: 162;
+        border-right: 1.3px solid #fff;
     }
 
     p {
@@ -167,6 +244,12 @@ body {
 @media (max-width:479px) {
     .container {
         max-width: min(80vmin, 80vmax);
+    }
+
+    header h1 {
+        font-size: 19px;
+        font-weight: 140;
+        border-right: 1.1px solid #fff;
     }
 
     p {
