@@ -16,7 +16,7 @@ body {
         Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #222;
+    background-color: #121212;
     color: #fff;
 }
 
@@ -34,7 +34,7 @@ header {
 
 header h1 {
     color: #fff;
-    animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+    animation: cursor 1s infinite step-end, typing 8s infinite steps(9);
     white-space: nowrap;
     overflow: hidden;
 }
@@ -57,11 +57,11 @@ header h1 {
     }
 
     30% {
-        width: 16ch;
+        width: 9ch;
     }
 
     80% {
-        width: 16ch;
+        width: 9ch;
     }
 
     90% {
@@ -77,11 +77,26 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
+    margin: auto;
 }
 
 .box {
-    background-color: darkblue;
     padding: 20px;
+}
+.arctic {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: auto;
+    padding: auto;
+    max-width: 99vmax;
+}
+.frenz {
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-flow: column;
+    width: 100%;
+    justify-content: end;
+    text-align: right;
 }
 
 /*------------------------------------------
@@ -167,13 +182,12 @@ header h1 {
 }
 
 @media (min-width:768px) and (max-width:1023px) {
-    .container {
+    .container  {
         max-width: 60vmax;
     }
 
     header h1 {
-        font-size: 30
-        px;
+        font-size: 30 px;
         font-weight: 210;
         border-right: 1.8px solid #fff;
     }
