@@ -6,6 +6,7 @@ body {
 html {
     display: table;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +19,42 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #121212;
     color: #fff;
+}
+
+body nav {
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: min-content;
+    background-color: transparent;
+    border: none;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(143, 142, 142);
+
+}
+
+li a {
+    text-decoration: none;
+    color: #1ac;
 }
 
 
@@ -73,6 +110,38 @@ header h1 {
     }
 }
 
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #112222 50%, #203e4a 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -83,21 +152,7 @@ header h1 {
 .box {
     padding: 20px;
 }
-.arctic {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin: auto;
-    padding: auto;
-    max-width: 99vmax;
-}
-.frenz {
-    display: grid;
-    grid-gap: 5px;
-    grid-auto-flow: column;
-    width: 100%;
-    justify-content: end;
-    text-align: right;
-}
+
 
 /*------------------------------------------
  *  Responsive Grid Media Queries - 1280, 1024, 768, 480
@@ -117,6 +172,16 @@ header h1 {
         font-size: 35px;
         font-weight: 250;
         border-right: 2px solid #fff;
+    }
+
+    li {
+        font-size: 14px;
+        line-height: 11px;
+    }
+
+    li img {
+        width: 15px;
+        height: auto;
     }
 
     p {
@@ -155,6 +220,17 @@ header h1 {
         border-right: 2px solid #fff;
     }
 
+    li {
+        font-size: 14px;
+        line-height: 11px;
+    }
+
+    li img {
+        width: 15px;
+        height: auto;
+    }
+
+
     p {
         font-size: 18px;
     }
@@ -182,7 +258,7 @@ header h1 {
 }
 
 @media (min-width:768px) and (max-width:1023px) {
-    .container  {
+    .container {
         max-width: 60vmax;
     }
 
@@ -190,6 +266,16 @@ header h1 {
         font-size: 30 px;
         font-weight: 210;
         border-right: 1.8px solid #fff;
+    }
+
+    li {
+        font-size: 13px;
+        line-height: 10px;
+    }
+
+    li img {
+        width: 14px;
+        height: auto;
     }
 
     p {
@@ -229,6 +315,16 @@ header h1 {
         border-right: 1.3px solid #fff;
     }
 
+    li {
+        font-size: 11px;
+        line-height: 8px;
+    }
+
+    li img {
+        width: 10px;
+        height: auto;
+    }
+
     p {
         font-size: 15px;
     }
@@ -264,6 +360,16 @@ header h1 {
         font-size: 19px;
         font-weight: 140;
         border-right: 1.1px solid #fff;
+    }
+
+    li {
+        font-size: 9px;
+        line-height: 8px;
+    }
+
+    li img {
+        width: 10px;
+        height: auto;
     }
 
     p {
