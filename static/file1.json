@@ -1,0 +1,12 @@
+{
+	"id": "69",
+	"dogs": "cats",
+	"mouse": "pig",
+	"hourly":
+		{
+			"time": "1678667302",
+			"close": "18.69",
+			"tov": 9,
+			"fov": 10
+		}
+}
