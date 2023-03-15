@@ -2,25 +2,11 @@ from flask import Flask, render_template, request
 from datetime import datetime
 import json
 import time
-import schedule
-import requests
 
 app = Flask(__name__)
 
+
 @app.route('/', methods=['GET', 'POST'])
-
-def update_content():
-    """
-    This function retrieves data from the specified URL and saves it to a local JSON file.
-    """
-    url = "https://min-api.cryptocompare.com/data/v2/histohour?fsym=SOL&tsym=USD&limit=2000&api_key=355dbaeffaa15832d7efde34d6a0473a9a6a2c8e0dc54e05b3e6028836e4ba59"
-    response = requests.get(url, timeout=10)
-    data = response.json()
-    with open('static/file1.json', 'w', encoding='utf-8') as json_file:
-        json.dump(data, json_file)
-
-
-
 def index():
     """
     This function processes a POST request and updates the index value and button text accordingly. It also retrieves data from local JSON files and formats it for display on the index page.
@@ -41,21 +27,22 @@ def index():
     for item in last_set:
         local_date = datetime.fromtimestamp(item["time"]).strftime('%d-%b')
         local_time = datetime.fromtimestamp(item["time"]).strftime('%H:%M')
-        time_close.append({"date": local_date, "time": local_time, "close": item["close"]})
+        time_close.append(
+            {"date": local_date, "time": local_time, "close": item["close"]})
     return render_template('index.html', data=time_close, index_value=index_value, button_text=button_text)
 
 
 def check_time():
+    """
+    This function checks if the current time is more than 12 hours past the time specified in a local JSON file.
+    """
     with open('static/file1.json', 'r', encoding='utf-8') as json_file:
         data = json.load(json_file)
         time_to = data['TimeTo']
         current_time = time.time()
         if current_time - time_to > 12 * 60 * 60:
-            update_content()
+            return
+
 
 if __name__ == '__main__':
-    # Run the check_time() function every minute
-    schedule.every(1).minutes.do(check_time)
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    app.run()
