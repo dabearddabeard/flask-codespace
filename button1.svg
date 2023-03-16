@@ -8,8 +8,10 @@
           display: flex;
           align-items: center;
           font-weight: bold;
-          padding: 12px 24px;
-          border-radius: 6px;
+          height: 24px;
+          width: 99px;
+          padding: 2px 4px;
+          border-radius: 4px;
           text-decoration: none;
         }
       </style>
