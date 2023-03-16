@@ -6,11 +6,12 @@ A micro web framework written in Python. It provides libraries to build lightwei
 
 
 ## Codespace
-Click 
+Click<br><br> 
 <img src="button.svg" alt="Button" width="100" height="25" style="display: block; margin: 0 auto;">
-
-On the Codespaces tab, click
+<br><br>
+On the Codespaces tab, click<br><br>
 <img src="button1.svg" alt="Button" width="100" height="25" style="display: block; margin: 0 auto;">
+<br><br>
 
 ## Clone to your local machine instead of using Codespace: 
 Navigate to the directory where you want to clone
