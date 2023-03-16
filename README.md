@@ -1,12 +1,32 @@
-# GitHub Codespaces ♥️ Flask
+# GitHub FLASK
 
-Welcome to your shiny new Codespace running Flask! We've got everything fired up and running for you to explore Flask.
+Install virtualenvwrapper using the following cmds:
+```
+pip3 install virtualenvwrapper
+export WORKON_HOME-~/workspace
+source /usr/local/bin/virtualenvwrapper.sh
+```
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+create a virtualenv  and install Flask
+```
+mkvirtualenv my_flask_env
+pip3 install flask
+```
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+to deactivate a virtualenv 
+```
+deactivate
+```
 
-To run this application:
+to activate an existing virtualenv using virtualenvwrapper, run the following cmd
+```
+workon my_flask_env
+```
+
+install the application along with all the dependencies mention in install_requires
+```
+python setup.py install
+```
 
 ```
 flask --debug run
