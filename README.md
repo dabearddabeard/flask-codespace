@@ -8,12 +8,10 @@ A micro web framework written in Python. It provides libraries to build lightwei
 # Codespace
 
 Click
-
-![Button](button.svg)
+<img src="button.svg" alt="Button" width="200" height="50"/>
 
 On the Codespaces tab, click 
-
-![Button](button1.svg)
+<img src="button1.svg" alt="Button" width="200" height="50"/>
 
 
 # Clone to your local machine instead of using Codespace 
