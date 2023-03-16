@@ -7,27 +7,33 @@ export WORKON_HOME-~/workspace
 source /usr/local/bin/virtualenvwrapper.sh
 ```
 
-create a virtualenv  and install Flask
+
+Create a virtualenv and install Flask
 ```
 mkvirtualenv my_flask_env
 pip3 install flask
 ```
 
-to deactivate a virtualenv 
+
+Deactivate a virtualenv 
 ```
 deactivate
 ```
 
-to activate an existing virtualenv using virtualenvwrapper, run the following cmd
+
+Activate an existing virtualenv using virtualenvwrapper, run the following cmd
 ```
 workon my_flask_env
 ```
 
-install the application along with all the dependencies mention in install_requires
+
+Install the application along with all the dependencies mention in install_requires
 ```
 python setup.py install
 ```
 
+
+Run
 ```
-flask --debug run
+python run.py
 ```

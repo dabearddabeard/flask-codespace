@@ -2,6 +2,7 @@ Metadata-Version: 2.1
 Name: myapp
 Version: 0.1
 Summary: template
+Home-page: UNKNOWN
 Author: Arctic Frenz
 License: GNU General Public License v3
 Platform: any
@@ -13,3 +14,6 @@ Classifier: Operating System :: OS Independent
 Classifier: Programming Language :: Python
 Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
 Classifier: Topic :: Software Development :: Librares :: Python Modules
+
+UNKNOWN
+
