@@ -5,8 +5,8 @@
         .my-button {
           background-color: #238636;
           color: white;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          padding-top: 50%;
+          padding-bottom: 50%;
           margin: 0;
           border-radius: 4px;
           text-decoration: none;
