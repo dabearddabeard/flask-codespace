@@ -6,8 +6,8 @@ A micro web framework written in Python. It provides libraries to build lightwei
 
 
 ## Codespace
-Click <button style="#238636"><> Code</button>
-On the Codespaces tab, click <button style="#238636">Create codespace on master</button>
+Click <button style="background-color: #238636; color: white;"><> Code</button>
+On the Codespaces tab, click <button style="background-color: #238636; color: white;">Create codespace on master</button>
 
 
 ## Clone to your local machine instead of using Codespace: 
