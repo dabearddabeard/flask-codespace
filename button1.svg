@@ -5,17 +5,12 @@
         .my-button {
           background-color: #238636;
           color: white;
-          display: flex;
-          align-items: center;
-          font-weight: bold;
-          height: 24px;
-          width: 99px;
-          padding: 2px 4px;
+          padding: 12px 24px;
           border-radius: 4px;
           text-decoration: none;
         }
       </style>
-      <a href="https://www.twitter.com/arcticfrenz" class="my-button">Create codespace on master</a>
+      <a href="https://www.example.com" class="my-button">Create codespace on main</a>
     </div>
   </foreignObject>
 </svg>
