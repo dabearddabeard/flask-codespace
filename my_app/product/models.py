@@ -1,3 +1,5 @@
+"""This module defines a dictionary of products."""
+
 PRODUCTS = {
     'iphone': {
         'name': 'iPhone 5S',

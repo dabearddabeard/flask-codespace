@@ -18,7 +18,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "myapp/templates/base.html"
+        "my_app/templates/base.html"
       ]
     },
     "vscode": {

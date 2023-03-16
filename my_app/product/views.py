@@ -10,7 +10,7 @@ product_blueprint = Blueprint('product', __name__)
 def home():
     return render_template('home.html', products=PRODUCTS)
 
-@product_blueprint.route('/produt/<key>')
+@product_blueprint.route('/product/<key>')
 def product(key):
     product = PRODUCTS.get(key)
     if not product:
