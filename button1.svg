@@ -1,6 +1,6 @@
 <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
-    <div width="100%" height="100%" xmlns="http://www.w3.org/1999/xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         .my-button {
           background-color: #238636;
@@ -13,6 +13,7 @@
           justify-content: center;
           font-weight: bold;
           height: 100%;
+          width: 100%;
         }
       </style>
       <a href="https://www.twitter.com/arcticfrenz" class="my-button">Create codespace on main</a>
