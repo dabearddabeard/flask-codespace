@@ -13,7 +13,7 @@
           text-decoration: none;
         }
       </style>
-      <a href="https://www.twitter.com/arcticfrenz" class="my-button">&lt;&gt; Code</a>
+      <a href="https://www.twitter.com/arcticfrenz" class="my-button">&lt;&gt; Create codespace on master</a>
     </div>
   </foreignObject>
 </svg>
