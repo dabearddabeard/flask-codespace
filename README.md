@@ -1,4 +1,15 @@
-# GitHub FLASK
+# FLASK for GitHub Codespaces
+GitHub Codespaces is a cloud-based development environment for writing, debugging, testing and deploying code. It provides developers with on-demand access to a secure development environment running a given codebase (Git repository) on a remote server. The Codespaces development environment runs in a virtual machine in the cloud and can be customized for any development project on GitHub by pre-installing dependencies, libraries, and even Visual Studio Code extensions and settings.
+
+Flask is a micro web framework written in Python. It provides libraries to build lightweight web applications in python.
+
+
+# To clone a the repository to your local machine using Git, 
+Nav to the directory where you want to clone
+```
+git clone https://github.com/dabearddabeard/flask-codespace.git
+```
+
 
 Install virtualenvwrapper using the following cmds:
 ```
