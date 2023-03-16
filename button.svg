@@ -8,6 +8,9 @@
           padding: 12px 24px;
           border-radius: 4px;
           text-decoration: none;
+          display: flex;
+          align-items: center;
+          font-weight: bold;
         }
       </style>
       <a href="https://www.example.com" class="my-button">&lt; &gt; Code</a>
