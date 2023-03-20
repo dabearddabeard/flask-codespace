@@ -1,5 +1,18 @@
-"""This module sets the Flask app environment to development and runs the app in debug mode."""
+"""" run.py """
 
-from my_app import app
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/spy')
+def about():
+    return render_template('spy.html')
+
+
+
 app.debug = "development"
 app.run(debug=True)

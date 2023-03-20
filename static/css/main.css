@@ -1,5 +1,13 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     padding-top: 50px;
+    background: black;
+    color: white;
 }
 
 .top-pad {
